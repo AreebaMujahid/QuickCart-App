@@ -13,6 +13,7 @@ import MyForm from './Components/MyForm/MyForm'
 import LoginForm from './Components/MyForm/LoginForm'
 import AdminForm from './Components/MyForm/AdminForm.jsx/AdminForm'
 import SignupDetails from './pages/admin/SignupDetails'
+import CreateProduct from './pages/admin/products/CreateProduct'
 
 function App() {
 
@@ -29,6 +30,8 @@ function App() {
           <Route path="/Login"  element={<LoginForm/>}/>
           <Route path="/AdminForm" element={<AdminForm/>}/>
           <Route path="/admin/SignupUsers" element={<SignupDetails/>}/>
+          <Route path="/admin/products/create" element={<CreateProduct/>}/>
+          <Route path="/Home" element={<Home/>}/>
         </Routes>
       </BrowserRouter>
       

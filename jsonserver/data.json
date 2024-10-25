@@ -19,6 +19,126 @@
             "description": "An interesting novel.",
             "imageFilename": "3.jpeg",
             "createdAt": "2024-10-01T11:00:00Z"
+        },
+        {
+            "id": 3,
+            "name": "Product 2",
+            "brand": "Brand B",
+            "category": "Booksgfhcvgc",
+            "price": 15.996576,
+            "description": "An interesting novel.",
+            "imageFilename": "3.jpeg",
+            "createdAt": "2024-10-01T11:00:00Z"
+        },
+        {
+            "id": 4,
+            "name": "Product 2",
+            "brand": "Brand B",
+            "category": "Booksgfhcvgc",
+            "price": 15.996576,
+            "description": "An interesting novel.",
+            "imageFilename": "3.jpeg",
+            "createdAt": "2024-10-01T11:00:00Z"
+        },
+        {
+            "id": 3,
+            "name": "Product 2",
+            "brand": "Brand B",
+            "category": "Booksgfhcvgc",
+            "price": 15.996576,
+            "description": "An interesting novel.",
+            "imageFilename": "3.jpeg",
+            "createdAt": "2024-10-01T11:00:00Z"
+        },
+        {
+            "id": 4,
+            "name": "Product 2",
+            "brand": "Brand B",
+            "category": "Booksgfhcvgc",
+            "price": 15.996576,
+            "description": "An interesting novel.",
+            "imageFilename": "3.jpeg",
+            "createdAt": "2024-10-01T11:00:00Z"
+        },
+        {
+            "id": 3,
+            "name": "Product 2",
+            "brand": "Brand B",
+            "category": "Booksgfhcvgc",
+            "price": 15.996576,
+            "description": "An interesting novel.",
+            "imageFilename": "3.jpeg",
+            "createdAt": "2024-10-01T11:00:00Z"
+        },
+        {
+            "id": 4,
+            "name": "Product 2",
+            "brand": "Brand B",
+            "category": "Booksgfhcvgc",
+            "price": 15.996576,
+            "description": "An interesting novel.",
+            "imageFilename": "3.jpeg",
+            "createdAt": "2024-10-01T11:00:00Z"
+        },
+        {
+            "id": 3,
+            "name": "Product 2",
+            "brand": "Brand B",
+            "category": "Booksgfhcvgc",
+            "price": 15.996576,
+            "description": "An interesting novel.",
+            "imageFilename": "3.jpeg",
+            "createdAt": "2024-10-01T11:00:00Z"
+        },
+        {
+            "id": 4,
+            "name": "Product 2",
+            "brand": "Brand B",
+            "category": "Booksgfhcvgc",
+            "price": 15.996576,
+            "description": "An interesting novel.",
+            "imageFilename": "3.jpeg",
+            "createdAt": "2024-10-01T11:00:00Z"
+        },
+        {
+            "id": 3,
+            "name": "Product 2",
+            "brand": "Brand B",
+            "category": "Booksgfhcvgc",
+            "price": 15.996576,
+            "description": "An interesting novel.",
+            "imageFilename": "3.jpeg",
+            "createdAt": "2024-10-01T11:00:00Z"
+        },
+        {
+            "id": 4,
+            "name": "Product 2",
+            "brand": "Brand B",
+            "category": "Booksgfhcvgc",
+            "price": 15.996576,
+            "description": "An interesting novel.",
+            "imageFilename": "3.jpeg",
+            "createdAt": "2024-10-01T11:00:00Z"
+        },
+        {
+            "id": 3,
+            "name": "Product 2",
+            "brand": "Brand B",
+            "category": "Booksgfhcvgc",
+            "price": 15.996576,
+            "description": "An interesting novel.",
+            "imageFilename": "3.jpeg",
+            "createdAt": "2024-10-01T11:00:00Z"
+        },
+        {
+            "id": 4,
+            "name": "Product 2",
+            "brand": "Brand B",
+            "category": "Booksgfhcvgc",
+            "price": 15.996576,
+            "description": "An interesting novel.",
+            "imageFilename": "3.jpeg",
+            "createdAt": "2024-10-01T11:00:00Z"
         }
     ]
 }

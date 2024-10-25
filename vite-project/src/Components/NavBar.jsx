@@ -18,6 +18,9 @@ function NavBar(){
         <Link className="nav-link" to="/Login">Login</Link>
       </li>
       <li className="nav-item active">
+        <Link className="nav-link" to="/Home">Home</Link>
+      </li>
+      <li className="nav-item active">
         <Link className="nav-link" to="/AdminForm">AdminForm</Link>
       </li>
       <li className="nav-item">

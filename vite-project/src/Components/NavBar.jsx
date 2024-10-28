@@ -1,6 +1,12 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import { useSelector } from "react-redux"; // Highlight: Import useSelector
+import { selectRole } from "../redux/slices/role"; // Corrected import
+
+
 function NavBar(){
+  //const role = useSelector((state) => state.auth.role); // Highlight: Access role from Redux store
+  const role = useSelector(selectRole);
     return(
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className='container-fluid'>
@@ -20,15 +26,29 @@ function NavBar(){
       <li className="nav-item active">
         <Link className="nav-link" to="/Home">Home</Link>
       </li>
-      <li className="nav-item active">
-        <Link className="nav-link" to="/AdminForm">AdminForm</Link>
-      </li>
-      <li className="nav-item">
-        <Link className="nav-link" to="/admin/products">Products</Link>
-      </li>
-      <li className="nav-item">
-        <Link className="nav-link" to="/admin/SignupUsers">See Users</Link>
-      </li>
+      {role === "Admin" && (
+              <li className="nav-item">
+                <Link className="nav-link" to="/AdminForm">AdminForm</Link>
+              </li>
+            )}
+      
+      
+      
+      
+      {role === "Admin" && (
+              <li className="nav-item">
+                <Link className="nav-link" to="/admin/products">Products</Link>
+              </li>
+            )}
+
+      
+      {role === "Admin" && (
+              <li className="nav-item">
+                <Link className="nav-link" to="/admin/SignupUsers">See Users</Link>
+              </li>
+            )}
+
+      
 
       
       

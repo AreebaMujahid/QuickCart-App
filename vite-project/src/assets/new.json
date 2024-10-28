@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "role": "Admin"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "role": "User"
+  },
+  {
+    "id": 3,
+    "name": "Jane Smith",
+    "role": "User"
+  },
+  {
+    "firstName": "areeba",
+    "lastName": "mujahid",
+    "email": "areebamujahidali55@gmail.com",
+    "phoneno": "03147572089",
+    "role": "Admin"
+  },
+  {
+    "firstName": "areesha",
+    "lastName": "razi",
+    "email": "shvhg@gmail.com",
+    "phoneno": "02637825363",
+    "role": "User"
+  },
+  {
+    "firstName": "nazia",
+    "lastName": "mujahid",
+    "email": "shvhg@gmail.com",
+    "phoneno": "03147572089",
+    "role": "Admin"
+  },
+  {
+    "firstName": "hdvghsv",
+    "lastName": "razi",
+    "email": "areeba@staunch.co",
+    "phoneno": "06735263436",
+    "role": "Merchant"
+  },
+  {
+    "firstName": "nhvghvhv",
+    "lastName": "sdnbcvdsc",
+    "email": "shvhg@gmail.com",
+    "phoneno": "03147572089",
+    "role": "Admin"
+  }
+]

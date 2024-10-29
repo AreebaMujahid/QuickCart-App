@@ -48,5 +48,19 @@
     "email": "shvhg@gmail.com",
     "phoneno": "03147572089",
     "role": "Admin"
+  },
+  {
+    "firstName": "arham",
+    "lastName": "mujahid",
+    "email": "arham@gmail.com",
+    "phoneno": "02435235627",
+    "role": "Admin"
+  },
+  {
+    "firstName": "komal",
+    "lastName": "komal ",
+    "email": "komal@gmail.com",
+    "phoneno": "03147572089",
+    "role": "Admin"
   }
 ]

@@ -1,18 +1,10 @@
-const express = require('express');
-const cors = require('cors');
+const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const url = require('url');
 
-const app = express();
-
-// Middleware setup
-app.use(cors({
-    origin: 'http://localhost:5174', // Frontend URL
-    methods: ['GET', 'POST'],
-}));
-app.use(express.json()); // Parses JSON bodies
-
-// Path to your data file
+// Define the port and the path to the data file
+const PORT = 4001;
 const dataFilePath = path.join(__dirname, '../assets/new.json');
 
 // Function to read data from JSON file
@@ -31,24 +23,43 @@ function writeDataToFile(data) {
     fs.writeFileSync(dataFilePath, JSON.stringify(data, null, 2));
 }
 
-// Signup route to handle form submissions
-app.post('/Signup', (req, res) => {
-    const users = readDataFromFile();  // Get existing data
-    users.push(req.body);              // Append new user data
-    console.log(users);
-    writeDataToFile(users);            // Write updated data back to file
-    res.status(201).send({ message: 'User created successfully' });
+// Create the server
+const server = http.createServer((req, res) => {
+    // Set up CORS headers
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5174');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
+    const parsedUrl = url.parse(req.url, true);
+
+    // Handle POST request for /Signup
+    if (req.method === 'POST' && parsedUrl.pathname === '/Signup') {
+        let body = '';
+        req.on('data', chunk => {
+            body += chunk.toString();
+        });
+        req.on('end', () => {
+            const users = readDataFromFile();
+            users.push(JSON.parse(body));
+            writeDataToFile(users);
+            res.writeHead(201, { 'Content-Type': 'application/json' });
+            res.end(JSON.stringify({ message: 'User created successfully' }));
+        });
+
+    // Handle GET request for /products
+    } else if (req.method === 'GET' && parsedUrl.pathname === '/products') {
+        const products = readDataFromFile();
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify(products));
+
+    // Handle unsupported routes
+    } else {
+        res.writeHead(404, { 'Content-Type': 'text/plain' });
+        res.end('Route not found');
+    }
 });
 
-// Endpoint to serve all data from JSON file
-app.get('/products', (req, res) => {
-    const products = readDataFromFile();
-    console.log(products);
-    res.json(products);  // Send the data as JSON response
-});
-
-// Start the server on port 4000
-const PORT = 4001;
-app.listen(PORT, () => {
+// Start listening on the specified port
+server.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });

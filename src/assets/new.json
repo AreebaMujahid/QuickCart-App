@@ -1,0 +1,65 @@
+[
+  {
+    "firstName": "areesha",
+    "lastName": "razi",
+    "email": "shvhg@gmail.com",
+    "phoneno": "06735263436",
+    "role": "User"
+  },
+  {
+    "firstName": "nazia",
+    "lastName": "razi",
+    "email": "shvhg@gmail.com",
+    "phoneno": "06735263436",
+    "role": "User"
+  },
+  {
+    "firstName": "arham",
+    "lastName": "mujahid",
+    "email": "arham@gmail.com",
+    "phoneno": "03623576463",
+    "role": "User"
+  },
+  {
+    "firstName": "cartapp",
+    "lastName": "cartapp",
+    "email": "cart@gmail.com",
+    "phoneno": "02352166398",
+    "role": "Merchant"
+  },
+  {
+    "firstName": "cart",
+    "lastName": "cart",
+    "email": "cart@gmail.com",
+    "phoneno": "02435235627",
+    "role": "Admin"
+  },
+  {
+    "firstName": "todo",
+    "lastName": "todo",
+    "email": "todo@gmail.com",
+    "phoneno": "03147572089",
+    "role": "Merchant"
+  },
+  {
+    "firstName": "todo",
+    "lastName": "todo",
+    "email": "tododsdfdv@gmail.com",
+    "phoneno": "02435235627",
+    "role": "Merchant"
+  },
+  {
+    "firstName": "firstnameeee",
+    "lastName": "nameeeeee",
+    "email": "nameeeee@gmail.com",
+    "phoneno": "02435235627",
+    "role": "Merchant"
+  },
+  {
+    "firstName": "cookie",
+    "lastName": "cookie",
+    "email": "cookie@gmail.com",
+    "phoneno": "06735263436",
+    "role": "Admin"
+  }
+]

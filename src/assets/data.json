@@ -1,0 +1,24 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Product 1",
+            "brand": "Brand A",
+            "category": "Electronics",
+            "price": 29.99,
+            "description": "High-quality electronic device.",
+            "imageFilename": "1.jpg",
+            "createdAt": "2024-10-01T10:00:00Z"
+        },
+        {
+            "id": 2,
+            "name": "Product 2",
+            "brand": "Brand B",
+            "category": "Books",
+            "price": 15.99,
+            "description": "An interesting novel.",
+            "imageFilename": "1.jpg",
+            "createdAt": "2024-10-01T11:00:00Z"
+        }
+    ]
+}

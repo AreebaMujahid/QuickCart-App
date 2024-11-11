@@ -9,7 +9,7 @@ function Home() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/products'); // Replace with your actual URL
+        const response = await axios.get('http://localhost:4008/products'); // Replace with your actual URL
         setProducts(response.data);
       } catch (error) {
         console.error('Error fetching products:', error);
